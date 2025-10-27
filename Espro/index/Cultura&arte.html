@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog Cultura & Arte</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: white;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Cabeçalho */
+    header {
+
+        left: 0;
+        width: 100%;
+        padding-top: 80px;
+        z-index: 1000;
+        top: 0;
+        position: fixed;
+        background-color: red;
+        color: white;
+        padding: 20px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: black;
+    }
+
+    /* Conteúdo principal */
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      display: flex;
+      gap: 30px;
+      padding: 0 15px;
+    }
+
+    /* Main content */
+    main {
+      flex: 3;
+    }
+
+    article {
+      background-color: #1b2232;
+      border-radius: 6px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+      overflow: hidden;
+      transition: box-shadow 0.3s ease;
+    }
+
+    article:hover {
+      box-shadow: 0 6px 14px rgb(0 0 0 / 0.15);
+    }
+
+    article img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    article .content {
+      padding: 15px 20px;
+    }
+
+    article h2 {
+      color: #e1b239;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    article p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Sidebar */
+    aside {
+      flex: 1;
+      background-color: #1b2232;
+      border-radius: 6px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+      height: fit-content;
+    }
+
+    aside h3 {
+      color: #2e7d32;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+      border-bottom: 2px solid #2e7d32;
+      padding-bottom: 5px;
+    }
+
+    aside ul {
+      list-style: none;
+    }
+
+    aside ul li {
+      margin-bottom: 12px;
+    }
+
+    aside ul li a {
+      text-decoration: none;
+      color: #e1b239;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    aside ul li a:hover {
+      color: #8d1818;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: red;
+      color: white;
+      margin-top: 40px;
+    }
+
+    /* Responsivo */
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+      }
+
+      aside {
+        margin-top: 30px;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+  <header>
+    <h1>Cultura & Arte</h1>
+    <nav>
+      <ul>
+        <li><a href="principal.html">Início</a></li>
+        <a href="esportes.html">esportes</a>
+        <a href="empreendedorismo.html" target="_blank">empreendedorismo</a>
+        
+
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main>
+      <article>
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Exposição de arte" />
+        <div class="content">
+          <h2>Exposição de Arte Contemporânea Inova no Brasil</h2>
+          <p>Uma nova exposição de arte contemporânea está chamando atenção por sua abordagem inovadora, misturando cultura tradicional com técnicas modernas.</p>
+        </div>
+      </article>
+
+      <article>
+        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80" alt="Concerto ao ar livre" />
+        <div class="content">
+          <h2>Concerto ao Ar Livre Reúne Multidão na Cidade</h2>
+          <p>O evento musical gratuito trouxe grandes nomes da música brasileira e atraiu um público diverso, celebrando a cultura local.</p>
+        </div>
+      </article>
+
+      <article>
+        <img src="https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&fit=crop&w=800&q=80" alt="Lançamento de livro" />
+        <div class="content">
+          <h2>Literatura Brasileira Ganha Novo Espaço de Divulgação</h2>
+          <p>Autores independentes agora contam com uma plataforma para divulgar suas obras, ampliando o acesso à cultura literária nacional.</p>
+        </div>
+      </article>
+    </main>
+
+    <aside>
+      <h3>Últimas Notícias</h3>
+      <ul>
+        <li><a href="#">Novo mural artístico revitaliza o centro histórico</a></li>
+        <li><a href="#">Festival de cinema começa nesta semana</a></li>
+        <li><a href="#">Entrevista com o diretor do museu municipal</a></li>
+        <li><a href="#">Workshop gratuito de fotografia artística</a></li>
+        <li><a href="#">Lançamento do álbum independente surpreende fãs</a></li>
+      </ul>
+    </aside>
+  </div>
+
+
+  <footer>
+    &copy; 2025 Cultura & Arte | Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>

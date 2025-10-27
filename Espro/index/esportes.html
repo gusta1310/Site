@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Esportes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #3daf3d;
+      color: #2e4d2e;
+    }
+
+    /* 🔁 Marquee moderno */
+
+    .marquee-container {
+
+      width: 100%;
+      overflow: hidden;
+      background-color: #2e7d32;
+      color: white;
+      padding: 0.5rem 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1001;
+    }
+
+    .marquee-text {
+      animation: scroll-left 40s linear infinite; /* mais lento */
+      display: inline-block;
+      white-space: nowrap;
+      padding-left: 100%;
+      animation: scroll-left 15s linear infinite;
+      font-size: 1.2rem;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 2.5rem; /* 🧩 Desce para não sobrepor a marquee */
+      left: 0;
+      width: 100%;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 1.5rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #c8f7c5;
+    }
+
+    nav {
+      margin-right: 40px;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 10rem auto 2rem; /* ⬆️ Mais espaço por causa do marquee + header fixos */
+      padding: 2rem;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #388e3c;
+      margin-top: 1rem;
+    }
+
+    h3 {
+      color: #2e7d32;
+      margin-top: 1.2rem;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 1rem;
+    }
+
+    ul li::before {
+      content: "✔ ";
+      color: #4caf50;
+      margin-right: 0.3rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+      background-color: #c8e6c9;
+    }
+  </style>
+  <!-- Shared responsive rules -->
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Esportesbr
+      <br>
+        <!-- 🔁 Marquee moderno -->
+  <div class="marquee-container">
+    <div class="marquee-text">
+      🏆 SPORTS - Últimas notícias, atualizações e destaques do mundo esportivo! 🏆
+
+        ⚽ Nova Aposta da Seleção!
+
+        🔥 Flamengo no Topo dos Gols!
+
+        🏈 São Paulo de Olho no Futebol Americano!  //
+
+         Bahia acerta empréstimo de João Paulo com o Santos até o fim de 2025  // 
+
+         Copa Libertadores 2025 entra nos oitavos de final com presença massiva de clubes brasileiros  // 
+
+         Rebeca Andrade anuncia que não competirá mais em provas de solo  // 
+
+         CBF confirma datas e horários das quartas de final da Copa do Brasil 2025 
+    </div>
+  </div>
+
+    </h1>
+    <nav>
+      <ul>
+         <li><a href="principal.html">início</a></li>
+         <li><a href="Cultura&arte.html">Cultura&Arte</a></li>
+        <li><a href="empreendedorismo.html">Empreendedorismo</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+<br/>
+  <!-- Seção 1 -->
+  <section>
+    <h2>Innovart Esportes</h2>
+    <h3>Principais noticias do Brasil no esporte</h3>
+    
+    <p>⚽ Nova Aposta da Seleção!</p>
+    <p>A Seleção Brasileira teve que fazer uns ajustes para as partidas das Eliminatórias. O meio-campista Joelinton e 
+        o lateral Alex Sandro foram cortados por lesão. Para a vaga de Joelinton, o técnico Carlo Ancelotti chamou Jean Lucas, do Bahia.
+    <br><em>Fonte: Notícias ao Minuto Brasil</em></p><br>
+
+    <p>🔥 Flamengo no Topo dos Gols! </p>
+    <p>Segundo dados da Sofascore, o Flamengo alcançou a marca de 100 gols em 2025 e lidera o ranking de 
+        gols do futebol brasileiro. O Bahia e o Fluminense vêm logo atrás, mostrando que o ataque dos times cariocas e baiano está com tudo! 
+    <br><em>Fonte: Diario AS</em></p><br>
+
+    <p>🏈 São Paulo de Olho no Futebol Americano! </p>
+    <p>O São Paulo Game 2025 da NFL, que vai rolar na Neo Química Arena, promete movimentar mais de R$ 330 milhões na cidade! O jogo, 
+        que vai ser entre Kansas City Chiefs e Los Angeles Chargers, mostra que o Brasil, com a segunda maior base de fãs da NFL no mundo, 
+        está cada vez mais no mapa do futebol americano.
+
+    <br><em>Fonte: Jornal do Comércio</em></p><br>
+  </section>
+
+  <!-- Seção 2 -->
+  <section>
+    <h2>O que fazemos</h2>
+
+    <h3>🌿 Energia Limpa</h3>
+    <ul>
+      <li>Painéis solares inteligentes</li>
+      <li>Geradores eólicos compactos</li>
+    </ul>
+
+    <h3>🌱 Agricultura Sustentável</h3>
+    <ul>
+      <li>Sensores de solo com IA</li>
+      <li>Gestão de irrigação automatizada</li>
+    </ul>
+
+    <h3>♻️ Reciclagem Inteligente</h3>
+    <ul>
+      <li>Plataformas de coleta seletiva digital</li>
+      <li>Identificação de materiais com visão computacional</li>
+    </ul>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    &copy; 2025 GreenTech - Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
