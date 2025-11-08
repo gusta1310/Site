@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        
+        @font-face{
+            font-family: 'MyFont';  /* Nome da fonte que será usada no CSS */
+            src:
+                local('MyFont'), /* Nome local da fonte, se já estiver instalada no sistema do usuário */
+                 url('https://example.com/fonts/myfont.woff2') format('woff2') format(woff2), /*woff2 browsers mais modernos /* Caminho para o arquivo da fonte */ /* Você pode adicionar mais formatos, como woff, ttf, etc. */
+                 url('https://example.com/fonts/myfont.woff') format('woff') format(woff);   /* Caminho para o arquivo da fonte */
+            
+            font-weight: normal; /* Define o peso da fonte, como normal, bold, etc. */
+            font-style: normal; /* Define o estilo da fonte, como normal, italic, oblique, etc. */
+    
+        }
+        p{
+            font-family: 'roboto', sans-serif; /* Usando a fonte importada */
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>font-face</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere expedita necessitatibus commodi modi delectus quidem voluptatum dolorem asperiores! Minima ratione, optio aspernatur error quisquam nihil repellendus obcaecati eveniet iure soluta.</p>
+</body>
+</html>

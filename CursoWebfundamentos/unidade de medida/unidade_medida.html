@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>unidades de medida</title>
+    <style>
+        h1{
+            font-size: 1.8em; /* 1.8em é 18px, maior que o padrão de 16px */
+        }        
+        html{
+            font-size: 62.5%; /* 1rem = 10px, facilita o cálculo de tamanhos */
+            padding-bottom: 550px; /* 550px é o tamanho do rodapé */
+        }
+        p{
+            font-size: 1.9em; /* 1em é o tamanho padrão do texto, equivalente a 16px */
+            width: 10em; /* 10em é 160px, maior que o padrão de 16px */
+            background-color: yellow;
+        }
+        .padding-em p{
+            background-color: transparent;
+            margin: 0;
+            padding: 1em; /* 3em é 48px, maior que o padrão de 16px */
+            font-size: 50px; /* 20px é o tamanho do texto dentro do padding */
+        }
+        .padding-em{
+            background-color: red;
+        }
+        .viewport-container {
+            font-size: 3rem; /* 3rem é 30px, maior que o padrão de 16px */
+            width: 90vw; /* 90% da largura da viewport */
+            height: 90vh; /* 90% da altura da viewport */
+        }
+        .viewport {
+            width: 90%; /* 90% da largura da viewport */
+            height: 90%; /* 90% da altura da viewport */
+            background-color: blue;
+        }
+        .em{
+            width: 20em; /* 20em é 320px, maior que o padrão de 16px */
+            padding: 1em;
+            margin: 1em;
+            background-color: orange;
+            font-size: 2em; /* 2em é 32px, maior que o padrão de 16px */
+        }
+        .ch{
+            width: 20ch; /* 20ch é 320px, maior que o padrão de 16px */
+            padding: 1em;
+            margin: 1em;
+            background-color: orange;
+            font-size: 2em; /* 2em é 32px, maior que o padrão de 16px */
+        }
+    </style>
+</head>
+<body>
+     <h1>Unidades de Medida</h1>
+
+     <p>Lorem ipsum dolor sit amet <b>texto em negrito</b>consectetur adipisicing elit. Hic repellendus commodi deleniti, nisi perferendis saepe, quas quae 
+        at distinctio sit numquam maxime omnis totam asperiores aliquid rem illum. Culpa, optio!</p>
+
+
+        <div class="padding-em">
+            <p>padding com em</p>
+        </div>
+        <div class="porcentagem viewport-container">
+            <div class="viewport">viewport</div>
+        </div>
+
+        <div class="em">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores quasi quae minima quam ducimus minus fugiat, unde veniam quod sint?
+        </div>
+        <div class="ch">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores quasi quae minima quam ducimus minus fugiat, unde veniam quod sint?
+        </div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .flexbox{
+            height: 250px;
+            border: 4px solid red;
+            display: flex; /* Define o elemento como um contêiner flexível */
+            margin-bottom: 16px;
+            
+        }
+        .flexbox div{
+            border: 2px solid orange;
+            width: 300px;
+            margin: 15px;
+        }
+        .flexbox.flex-container1{
+            flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se não houver espaço suficiente */
+            flex-flow: row wrap; /* Define a direção dos itens como linha e permite que eles se movam para a próxima linha */
+            flex-direction: row; /* Define a direção dos itens como linha */
+        }
+        .flexbox.flex-container2{
+            align-items: center; /* Alinha os itens no centro do contêiner */
+            flex-direction: column; /* Define a direção dos itens como coluna */
+            flex-direction: row
+        }
+        .flexbox.flex-container1 div{
+            width: 30px;
+        }
+        .flexbox.flex-container3{
+            justify-content: space-around; /* Distribui os itens uniformemente, com espaço igual ao redor deles */
+            align-items: center;
+
+        }
+        .flexbox.flex-container3 div{
+            width: 30px;
+            margin: 0;
+        }
+        .flexbox.flex-container4{
+            justify-content: space-around;
+            align-items: baseline;
+
+        }
+        .flexbox.flex-container4 div{
+            width: 30px;
+            margin: 0;
+        }
+        .flexbox.flex-container5{
+            justify-content: center;
+            align-items: flex-end; /* Alinha os itens na parte inferior do contêiner */
+            align-content: flex-start; /* Alinha o conteúdo do contêiner na parte superior */
+        }
+        .flexbox.flex-container5 div{
+            width: 50px;
+            margin: 10px;
+        }
+        .flex-container6{
+            justify-content: flex-end;
+            align-items: flex-start; /* Alinha os itens na parte superior do contêiner */
+            flex-direction: column; /* Define a direção dos itens como linha */
+        }
+        .flex-container6 div{
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+        }
+
+        .flex-container7{
+            justify-content: flex-end;
+            align-items: flex-start; /* Alinha os itens na parte superior do contêiner */
+            flex-direction: column; /* Define a direção dos itens como linha */
+        }
+        .flex-container7 div{
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+        }
+        .flex-container7 .div2{
+            flex-basis: 200px; /* Define a largura base do item como 200px */
+
+        }
+        .flex-container8{
+            justify-content: flex-end;
+            align-items: center; /* Alinha os itens na parte superior do contêiner */
+
+        }
+        .flex-container9{
+            justify-content: center; 
+            align-items: center; 
+            gap: 10px; /* Adiciona um espaço de 10px entre os itens */
+        }
+        .flex-container9 div{
+            flex-basis: 100px; /* Define a largura base do item como 100px */
+            background-color: rgb(38, 0, 255);
+            margin: 0;
+        }
+        .flex-container .div1{
+            flex-shrink: 2; /* Permite que o item encolha mais rapidamente que os outros */
+            flex: 1; /* row, shrink, basis esta tag é um atalho  */
+        }
+        .flex-container10 div{
+            background-color: green;
+            color: white;
+            font-size: 20px;
+            
+        }
+        .flex-container10 .div2{
+            order: 1; /* Define a ordem do item como 1, fazendo com que ele apareça antes dos outros */
+            align-self: flex-start; /* Alinha o item no início do contêiner */
+        }
+        .flex-container10 .div3{
+            order: 2; /* Define a ordem do item como 2, fazendo com que ele apareça depois do item com ordem 1 */
+            align-self: center;
+        }
+        .flex-container10 .div4{
+            align-self: flex-end; /* Alinha o item no final do contêiner */
+        }
+
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="flexbox flex-container1">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+    <div class="flexbox flex-container2">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    <div class="flexbox flex-container3">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    <div class="flexbox flex-container4">
+        <div class="div1">1</div>
+        <div class="div2" style="font-size: 30px;">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    <div class="flexbox flex-container5">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    <div class="flexbox flex-container6">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    <div class="flexbox flex-container7">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    <div class="flexbox flex-container8">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    <div class="flexbox flex-container9">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    <div class="flexbox flex-container10">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+</body>
+</html>

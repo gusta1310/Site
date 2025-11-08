@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            background-color: azure;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        input, label{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            border: none;
+            
+        }
+        label{
+            margin-bottom: .25em;
+            margin-top: .25em;
+        }
+        input{
+            margin-bottom: 1em;
+            padding: .50em;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+        legend{
+            text-align: center;
+            font-weight: bold;
+            padding: 1em;
+            font-size: 1.1em;
+            
+            
+            
+        }
+        h1{
+            text-align: center;
+            
+        }
+        form{
+            width: 350px;
+            margin: 0 auto;
+            background-color: #ecf0f1;
+            padding: 20px;
+            box-shadow: 3px 3px 10px;
+            margin-top: 20px;
+            
+        }
+        fieldset{
+            border: none;
+            padding: 10px;
+
+            
+        }
+       
+       .actions{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        
+       }
+       .btn{
+        
+        background-color: rgb(1, 1, 44);
+        color: #ecf0f1;
+        margin-top: 2em;
+       }
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="#" method="post" target="_blank"> <!-- Início do formulário "form action", método POST "não vazar informações pra URL", abre em nova aba "target=_blank" -->
+        <fieldset> <!-- Agrupa todos os elementos abaixo num bloco -->
+            
+            <legend>Entre com seu dados de acesso</legend> <!---titulo-->
+           
+            <label for="" > Usuário</label> <!---titulo do campo de resposta exemplo: Nome-->
+            <input type="text" id="user" required autofocus> <!-- Campo de texto para o usuário, obrigatório e com foco automático "autofocus", "required"-->
+            
+
+
+            <label for="">Senha</label>
+            <input type="password" id="pass" required> <!---campo senha porém com obrigatoriedade de preenchimento "required"-->
+            <div class="actions">
+            <input type="reset" value="Apagar" class="btn" >
+            <input type="submit" value="Entrar" class="btn"> <!--botão pra enviar formulário-->
+            </div>
+            
+           
+        </fieldset>
+    </form>
+</body>
+</html>

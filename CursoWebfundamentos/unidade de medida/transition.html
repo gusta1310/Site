@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        :root{
+            --widht: 13em;
+            --height: 13em;
+        }
+        div {
+            background-color: yellow;
+            margin: 100px auto;
+            width: var(--widht); 
+            height: var(--height);  
+            transition-property: var(--widht), var(--height); /* Specifying properties to transition */
+            transition-duration: 3s, 3s;     /* Duration of the transition */
+            transition-timing-function: ease-in-out; /* Custom timing function */
+            transition-delay: 0s; /* Delay before the transition starts */
+            
+        }   
+        div:hover {
+            width: calc(var(--widht) * 2);  /* Doubling the width */
+            height: calc(var(--height) * 2);    /* Doubling the height */
+            background-color: red; /* Changing background color to red */
+            transition: all 0.5s ease-in-out;   /* Smooth transition effect */
+            border-radius: 50%; /* Making the div circular */
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

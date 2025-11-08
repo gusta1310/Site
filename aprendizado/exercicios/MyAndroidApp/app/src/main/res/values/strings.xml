@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My Android App</string>
+    <string name="main_screen_title">Main Screen</string>
+    <string name="bmi_calculator_title">BMI Calculator</string>
+    <string name="grade_calculator_title">Grade Calculator</string>
+    <string name="about_developer_title">About Developer</string>
+    <string name="calculate_bmi_button">Calculate BMI</string>
+    <string name="calculate_average_button">Calculate Average</string>
+    <string name="developer_name">John Doe</string>
+    <string name="developer_rgm">RGM: 123456</string>
+    <string name="developer_info">This application was developed as a part of an Android development course.</string>
+    <string name="pass_message">You are approved!</string>
+    <string name="fail_message">You are failed!</string>
+    <string name="input_weight_hint">Enter your weight (kg)</string>
+    <string name="input_height_hint">Enter your height (m)</string>
+    <string name="input_grade_hint">Enter grade</string>
+</resources>

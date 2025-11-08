@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculo</title>
+    <style>
+
+        :root{ /*lugar pra armazenar variavéis*/
+            --padding: 2rem; /* Variável para o padding */
+            --header-height: 15rem; /* Variável para a altura do cabeçalho */
+            --main-color: rgb(226, 5, 5); /* Cor de fundo do main */
+            --footer-height: 10rem; /* Variável para a altura do rodapé */
+            
+
+        }
+
+        html{
+            font-size: 62.5%; /* 1rem = 10px, facilita o cálculo de tamanhos */
+            --header-height: 15rem;  /*variavel manutenção*/
+        }
+        header{
+            width: 100%;
+            background-color: yellow;
+            height: var(--header-height); /* 15rem é 240px, maior que o padrão de 16px */
+            font-size: 2rem; /* 2rem é 32px, maior que o padrão de 16px */
+            position: fixed; /* Fixa o cabeçalho no topo */
+            top: 0; /* Fixa no topo da página */
+            left: 0; /* Fixa no lado esquerdo da página */
+        }
+        main{
+            min-height: calc(100vh - var(--header-height) - 2rem);  /* 100% da altura da viewport */
+            background-color: gainsboro;
+            font-size: 2rem; /* 2rem é 32px, maior que o padrão de 16px */
+            margin-top: var(--header-height); /* Espaço para o cabeçalho fixo */
+            padding: var(--padding); /* Usa a variável de padding */
+
+        }
+        footer{
+            height: var(--footer-height); /* 10rem é 160px, maior que o padrão de 16px */
+            font-size: 2rem; /* 2rem é 32px, maior que o padrão de 16px */
+            background-color: var(--main-color)
+        }
+    </style>
+</head>
+<body>
+    <header>header</header> 
+    <main>main</main>
+    <footer>footer</footer>  
+</body>
+</html>

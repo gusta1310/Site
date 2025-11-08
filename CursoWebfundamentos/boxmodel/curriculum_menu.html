@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeucurriculumHTML</title>
+    <style>
+        h1{
+            text-align: center; /* Alinha o texto à esquerda */
+            background-color: rgb(148, 195, 248);
+            box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura total do elemento */
+            margin: 20px 50px 20px 50px; /* Define a margem superior, inferior, direita e esquerda como 0 */
+            color: rgb(18, 18, 104);
+            font-size: 38px;
+            padding: 10px 10px 10px 10px; /* Define o preenchimento superior, inferior, direita e esquerda como 0 */
+        }
+        .info{
+            list-style-type: none; /* Remove o marcador da lista não ordenada */
+            margin: 20px 50px 20px 50px; 
+            font-size: medium;
+            list-style-position: inside; 
+        }
+
+        .exp{
+            list-style-type: disc; /* Remove o marcador da lista não ordenada */
+            margin: 20px 50px 20px 50px; 
+            font-size: medium;
+            list-style-position: inside; 
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(172, 164, 164);
+            margin: 20px 50px 20px 50px; 
+            border: solid black; /* Define a borda como sólida e preta */
+            padding: 50px 10px 50px 10px; /* Define o preenchimento superior, inferior, direita e esquerda como 0 */
+        }
+
+        p{
+            margin: 20px 50px 20px 50px; 
+            font-size: medium;
+        }
+        a{
+            text-decoration: underline; /* Remove o sublinhado do link */
+            color: rgb(18, 18, 104); /* Define a cor do texto do link como azul */
+            font-weight: bold; /* Define o peso da fonte como negrito */
+        }
+
+        h2{
+            font-size: 28px; 
+            color: rgb(18, 18, 104); 
+            text-align: left;
+            background-color: rgb(138, 133, 133);
+            border-bottom: black solid 2px; 
+            margin: 20px 50px 20px 50px; 
+            padding: 10px 10px 10px 10px; /* Define o preenchimento superior, inferior, direita e esquerda como 0 */
+            border-radius: 10px; /* Define o raio da borda como 10 pixels */
+            width: 50%; /* Ajusta a largura do elemento para caber no conteúdo */
+
+        }
+        .menu{
+            background-color: rgb(172, 164, 164);
+            text-align: left; /* Alinha o texto à esquerda */
+            margin: 50px 50px 20px 8px; /* Define a margem superior, inferior, direita e esquerda como 0 */
+            
+            
+        }
+
+        .menu li{
+            list-style-type: none;
+            display: inline-block;
+            padding: 5px;
+            
+        }
+        .menu a{
+            background-color: rgb(255, 255, 255);
+            text-decoration: none;
+            padding: 10px;
+            display: inline-block;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+             'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+             border: solid 1px black;
+
+        }
+
+        .menu a:hover{
+            background-color: rgb(87, 83, 83);   /* Altera a cor de fundo ao passar o mouse */
+            color: rgb(18, 18, 104);    
+            border-radius: 10px; /* Adiciona um raio de borda ao passar o mouse */
+            transition: all 0.2s ease-in-out; /* Adiciona uma transição suave ao passar o mouse */
+        }
+
+        .a{
+            margin-right: 50px;
+        }
+        .b{
+            margin-right: 50px;
+        }
+        .c{
+            margin-right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gustavo Henrique Dos Santos</h1>
+    <br>
+    <ul class="info">
+        <li><strong>Nacionalidade:</strong>  Brasileiro</li> <br>
+        <li><strong>Estado Civil:</strong> Solteiro</li> <br>
+        <li> <strong>Data de nascimento:</strong> 13/10/2004</li> <br>
+        <li> <strong>Moradia:</strong> Sp-gru</li>
+    </ul>
+
+    <ul class="menu">
+        <li class="a"><a href="#">linkedin</a></li>
+        <li class="b"><a href="#">github</a></li>
+        <li class="c"><a href="#">youtube</a></li>
+
+    </ul>
+    <br>
+
+    <h2>Objetivos</h2>
+    <p>Aprender mais sobre programação e desenvolvimento web, e conseguir um emprego na área.</p>
+    <br>
+    <h2>Experiência profissional</h2>
+    
+    <p style="font-size: medium;"><a href="http://www.rossidelivery.com.br" target="_blank">RossiSupermercados</a> - <b>(12/2024 até 07/2025)</b></p>
+    <p style="font-size: medium;"><b>Atendente de supermercado</b></p>
+    <p>Atendimento ao cliente, organização de prateleiras, reposição de produtos e caixa.</p>
+   
+    <p><a href="http://conectacargo.com.br" target="_blank">Conectacargo</a> - <b style="text-decoration: underline;">(Atualmente)</b></p>
+    <p style="font-size: medium;"><b>Jovem aprendiz (Torre de controle)</b></p>
+    <p>Auxiliar na operação de torres de controle, monitoramento de tráfego e suporte administrativo.</p>
+
+    <h2> Cursos / Especializações</h2>
+    <ul class="exp">
+        <li>Cursando: Ciência da Computação (5° Semestre)</li>
+        <li>Cursando: Desenvolvimento Web <a style="text-decoration: none;" href="http://www.udemy.com" target="_blank">(Udemy)</a></li>
+        <li>Inglês: intermediário</li>
+        <li>Pacote Office: intermediário</li>
+        <li>Python</li>
+    </ul>
+
+
+
+</body>
+</html>

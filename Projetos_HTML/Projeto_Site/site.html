@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <style>
+        html{
+            font: 400 62.5% 'inter', sans-serif;
+        }
+        p{
+            font-size: 1.6rem;
+        }
+        h1{
+            font-size: 4.8rem;
+            font-family: var(--fonte_titulos);
+            margin-bottom: 50px;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+           
+        }
+        .container{
+            max-width: 127.6rem;
+            margin: auto;
+            
+        }
+        .upper{
+            text-transform: uppercase;
+        }
+        :root{
+            --fonte_titulos: apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            --fonte_texto: aple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            --primary-color: #fed001;
+        }
+        .wrapperContainer-dark{
+        background-color: #2a2a2a;
+       
+       }
+        .wrappercontainer-hero{
+            background-image: linear-gradient(yellow 60%, white 100%);
+            
+            
+        }
+         .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: white;
+                padding: 1.2rem 0;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: #2a2a2a;
+                width: 100%;
+                z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+                
+
+          }
+            .header img {
+                    width: max-content;
+                    height: 70px;
+                    margin-left: 40px;
+                    
+
+            }
+          .nav ul{
+                list-style: none;
+                display: flex;
+                gap: 5px;
+                padding: 0;
+                margin: 0px 20px 0px 0px;  
+                font-size: 15px; 
+          }
+          .nav li a{
+            border: solid 1px;
+            padding: 0.75em 1.15em; /* espaçamento vertical e horizontal*/
+            color: var(--primary-color);
+            text-decoration: none;
+          }
+         .nav li a:hover{
+                background-color: black;
+                
+            }
+        .wrapperContainer-light{
+            background-color: #fdfdfd;
+            width: 100%;
+            height: 100%;
+
+            
+            
+       }
+       .wrapperContainer-light .btn{
+            display: block;
+            margin: 30px auto 70px auto;
+            text-align: center;
+            width: 15%;
+            color: black;
+            text-decoration: none;
+            border: var(--primary-color) solid 1px;
+            background-color: var(--primary-color);
+            padding: 10px;
+            border-radius: 5px;
+            font-family: var(--fonte_texto);
+            font-size: 18px;
+            
+       }
+         .cursos_container{
+          padding: 50px;
+          flex-wrap: wrap;
+         }
+         .cursos-list {
+            display: flex;
+            flex-wrap: wrap; /* permite que os itens se ajustem em várias linhas */
+            gap: 20px;
+            justify-content: center;
+            height: 100%;
+            
+
+        }
+        .curso-item {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        padding: 0px;
+        width: 400px; /* ajuste conforme desejar */
+        height: 400px; /* ajuste conforme desejar */
+        box-sizing: border-box; /* garante que o padding não aumente a largura total */
+        text-align: center; /* centraliza o texto dentro do item */
+        margin-bottom: 0px; /* espaçamento entre os itens */
+        margin-top: 20px; /* espaçamento entre os itens */
+        transition: transform 0.3s ease; /* animação suave ao passar o mouse */
+        }
+        .curso-item:hover {
+            transform: translateY(-5px); /* efeito de elevação ao passar o mouse */
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1); /* sombra mais intensa ao passar o mouse */
+        }
+        .curso-item img {
+            width: 100%; /* garante que a imagem ocupe todo o espaço do item */
+            height: 250px; /* ajuste conforme necessário */
+            border-radius: 8px; /* opcional: arredonda os cantos da imagem */
+        }
+        .curso-item h3 {
+             margin: 20px 0 30px 0;
+             font-family: var(--fonte_titulos);
+             font-size: 18px;
+             text-align: left;
+             padding: 0 20px; /* Adiciona espaçamento interno horizontal */
+        }
+        .cursos_container h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            margin-top: 50px;
+            color: #333;
+            font-size: 30px;
+            font-family: var(--fonte_titulos);
+           
+        }
+        .curso-item p {
+            color: #666;
+            font-size: 14px;
+            text-align: left;
+            line-height: 20px; /* Ajusta o espaçamento entre linhas */
+            padding: 0 20px; /* Adiciona espaçamento interno horizontal */
+            
+        }
+
+       .hero-banner{
+        display: flex;
+        justify-content: space-between; /* Alinha os itens horizontalmente */
+        align-items: center;    /* Alinha os itens verticalmente */
+        gap: 20rem; /* Espaçamento entre os itens */
+        padding: 90px;
+        
+        
+       }    
+       .wrappercontainer-hero .btn{
+            background-color: #2a2a2a;
+            border-radius: 4px;
+            font-size: 1.8rem;
+            text-decoration: none;
+            padding: 1.6rem;
+            color: var(--primary-color);
+       }
+      
+        
+       
+       .wrappercontainer-blue{
+        background-image: linear-gradient(180deg, #003464 40%, rgb(221, 221, 221) 100%);
+        color: #fafafa;
+        margin: 0;
+        padding: 0;
+        
+        
+        
+        
+       }
+         .container_nossa-escola{
+          padding: 50px;
+          
+         }
+        .container_nossa-escola h1{
+            text-align: left;
+            margin-bottom: 0;
+            font-size: 7rem;
+            font-family: var(--fonte_titulos);
+            
+
+        }
+        .escola-content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+        .escola-texto{
+            margin-left: 0;
+            width: 40%;
+            font-size: 1.6rem;
+            line-height: 1.5; /* Melhora a legibilidade do texto */
+            color: #fafafa; /* Cor do texto */
+            font-family: var(--fonte_texto);
+        }
+        .escola-image img{
+            max-width:100%; /* Garante que a imagem ocupe todo o espaço disponível */
+            height: auto; /* Garante que a imagem ocupe todo o espaço disponível */ 
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
+
+         .escola-image{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end; /* Alinha a imagem à direita */
+         align-items: center; /* Alinha a imagem verticalmente ao centro */
+        }
+       .wrapperContainer-dark1{
+        background-color: #2a2a2a;
+        color: white;
+        padding: 0 0;
+
+       }
+       .contatos h1{
+        text-align: center;
+       }
+         .contatos p{
+        text-align: right;
+        font-size: 1.6rem;
+        margin: 10px 0;
+        color: #666;
+         }
+         .contatos .content_textinfo{
+        margin-top: 30px;
+        margin-bottom: 20px;
+            
+         }
+        .contatos iframe{
+            width: 100%;
+            height: 525px;
+                
+         }
+        .footer {
+            background-color: #2a2a2a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapperContainer-dark">
+        <header class="header">
+            <img src="imagens/logoAprenser.png" alt="logoAprenser">
+            <nav class="nav">
+                <ul>
+                    <li><a href="#cursos" target="_blank">Cursos</a></li>
+                    <li><a href="#Sobre Nós">Sobre Nós</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
+                    <li><a href="https://www.google.com">Sair</a></li>
+                    
+                </ul>
+        </header>
+    </div>
+    <div class="wrappercontainer-hero">
+        <section class="container hero-banner">
+            <div class="header_content">
+                <h1>O saber é o que transforma nosso <span class="upper">ser</span> </h1>
+                <a href="#" class="btn">Saiba mais</a>
+            </div>
+            
+            <img src="imagens/HeroImage.png" alt="HeroImage">
+        </section>
+    </div>
+    <div class="wrapperContainer-light">
+        <section id="cursos" class="cursos_container">
+             <h2>Principais Cursos</h2>
+            <div class="cursos-list">
+                <div class="curso-item">
+                    <img src="imagens/curso-design.png" alt="curso-design">
+                   <h3>Design para web</h3> 
+                    <p>O curso Design para Web é perfeito para aqueles que desejam aprender a criar designs atraentes e funcionais para sites e aplicativos móveis.</p>
+                </div>
+                <div class="curso-item 1">
+                    <img src="imagens/curso-design-1.png" alt="front end developer">
+                    <h3>front End developer</h3>
+                    <p>Aprenda HTML, CSS e Javascript e crei interfaces ricas e semânticas para páginas web, aplicativos on-line ou até mesmo aplicações para aparelhos celulares</p>
+                </div>
+                 <div class="curso-item 1">
+                    <img src="imagens/curso-design-2.png" alt="back end developer">
+                    <h3>Back End developer</h3>
+                    <p>Com este curso você vai dominar uma linguagem back-end a sua escolha, um sistema de banco de dados e aprenderá como funciona o protocolo HTTP na prática.</p>
+                </div>
+            </div>
+        </section>
+        <a href="#" class="btn">Ver mais cursos</a>
+    </div>  
+        
+        <div class="wrappercontainer-blue">
+        <section id="Sobre Nós" class="container_nossa-escola container">
+            <h1>Nossa Escola</h1>
+        <div class="escola-content">
+                <div class="escola-texto">
+                    <p>Aprenda habilidades tecnológicas em demanda e alcance seus objetivos de carreira com a nossa escola de <br>tecnologia online.</p> 
+                    <p>Oferecemos uma ampla gama de cursos online, desde programação e desenvolvimento de software até design gráfico e análise de dados.</p> 
+                    <p>Nossos instrutores experientes fornecerão a você um ambiente de aprendizado interativo e de suporte para ajudá-lo a adquirir as habilidades necessárias para ter sucesso em sua carreira.</p> 
+                    <p>Inscreva-se agora e comece sua jornada para se tornar um profissional de tecnologia bem-sucedido.</p>
+                    
+                </div>
+                <div class="escola-image">
+            <img src="imagens/nossa-escola.png" alt="nossa-escola">
+        </div>
+        </div>
+            
+            
+        
+            
+        </section>
+    </div>
+    <div class="wrappercontainer-light">
+        <section id="contatos" class="container contatos">
+            <h1>Contatos</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.257433050216!2d-46.523410424353024!3d-23.45117685755405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef535fb71d403%3A0x4b7958315dc8350f!2sAv.%20Benvindo%20Tolentino%20Neto%2C%20461%20-%20Vila%20Santa%20Maria%2C%20Guarulhos%20-%20SP%2C%2007121-270!5e0!3m2!1spt-BR!2sbr!4v1752535198047!5m2!1spt-BR!2sbr" width="100%" height="525" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="content_textinfo"></div>
+            <p>Av. da Liberdade, 1001</p>
+            <p>tel: +351 21 123 456</p>
+            <p>email: contato@aprenser.com</p>
+    </div>
+
+    <div class="wrapperContainer-dark1">
+        <footer class="footer container">
+            <p>Desenvolvido por Eumrm</p>
+        </footer>
+    </div>
+        
+           
+         
+</body>
+</html>

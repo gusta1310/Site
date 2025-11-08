@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/developer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developer Name: John Doe"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/developer_rgm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RGM: 123456"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+
+    <ImageView
+        android:id="@+id/developer_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/developer_photo"
+        android:contentDescription="@string/developer_photo_desc"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/developer_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This application was developed as part of a learning exercise."
+        android:textSize="16sp"/>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .table td{
+            border: 1px solid black; /* borda de 1px sólida preta */
+            padding: 10px; /* espaçamento interno de 10px */
+           
+        }
+        .section {
+            padding: 10px; /* espaçamento interno de 10px */
+            display: flex; /* exibe como flexbox */     
+            flex-direction: column; /* direção da coluna */
+            justify-content: center; /* alinha os itens ao centro */
+            align-items: center; /* alinha os itens ao centro */
+        }   
+        .table{
+            border-collapse: collapse; /* gruda as bordas */
+            
+        }
+        .table1 {
+            border: 1px solid black; /* borda de 1px sólida preta */
+            border-collapse: collapse; /* gruda as bordas */
+            width: 100%; /* largura total */
+        }
+    </style>
+</head>
+<body>
+    <section class="section">
+        <table class="table"> <!-- exemplo de tabela -->
+            <tr> <!-- isto é uma linha de tabela -->
+                <th>Coluna 1</th> <th>Coluna 2</th> <!-- isto é um cabeçalho de tabela -->
+            </tr>
+                <td>1A</td> <td>2B</td> <!-- isto é uma célula de tabela -->
+            </tr>
+            <tr>
+                <td colspan="2">3A</td> <!-- colspan: isto é uma célula de tabela que ocupa duas colunas -->
+            </tr>
+            <tr>
+                <td rowspan="2">4A</td> <td>5B</td> <!-- rowspan: isto é uma célula de tabela que ocupa duas linhas -->
+            </tr>
+            <tr>
+                <td>6A</td>
+            </tr> 
+    </table>
+    </section>
+
+    
+
+
+
+
+
+
+
+
+
+
+    </section>
+</body>
+</html>

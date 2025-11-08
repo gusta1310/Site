@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Android App</string>
+    <string name="main_activity_title">Main Screen</string>
+    <string name="bmi_activity_title">BMI Calculator</string>
+    <string name="grade_calculator_activity_title">Grade Calculator</string>
+    <string name="developer_info_activity_title">Developer Information</string>
+    <string name="calculate_bmi">Calculate BMI</string>
+    <string name="enter_height">Enter Height (m):</string>
+    <string name="enter_weight">Enter Weight (kg):</string>
+    <string name="bmi_result">Your BMI is: %1$.2f</string>
+    <string name="enter_grade1">Enter Grade 1:</string>
+    <string name="enter_grade2">Enter Grade 2:</string>
+    <string name="enter_grade3">Enter Grade 3:</string>
+    <string name="calculate_average">Calculate Average</string>
+    <string name="average_result">Your average is: %1$.2f - %2$s</string>
+    <string name="pass">Pass</string>
+    <string name="fail">Fail</string>
+    <string name="developer_name">Developer: Gustavo Henrique Dos Santos</string>
+    <string name="developer_rgm">RGM: 123456789</string>
+    <string name="developer_photo_description">Photo of the Developer</string>
+</resources>

@@ -1,0 +1,89 @@
+body {
+    background-color: aquamarine;
+}
+
+.main-title{
+    text-align: center;
+
+}
+
+.list-wrapper{
+    margin-bottom: 100px;
+
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    list-style-type: none;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.list-item{
+    flex-basis: 280px;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+
+    background-image: url(imagens/thumb02.jpg);
+    background-size: 100%;
+    background-position: top;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+    background-repeat: no-repeat;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.5s ease-in-out;
+}
+.list-item-image img{
+   border-radius: 50%;
+   height: 100px;
+   width: 100px;
+   margin-top: 100px;
+
+    
+    
+}
+
+.list-item__content{
+    background-color:white;
+    padding: 10px;
+}
+
+.list-item__name{
+    font-size: 30px;
+    margin-bottom: 0;
+    font-weight: bold;
+    transition: opacity 0.8s ease; /* Suaviza a transição */
+    opacity: 0;
+}
+.list-item__email{
+    margin-bottom: 30px;
+    text-decoration: underline;
+    opacity: 0;
+    transition: opacity 0.8s ease; /* Suaviza a transição */
+}
+.list-item__action {
+   gap: 50px;
+    display: flex;
+    justify-content: center;
+    display: none;
+   padding: 10px;
+   transition: opacity 0.8s ease; /* Suaviza a transição */
+}
+.list-item:hover{
+    transform: scale(1.05); /* Aumenta o tamanho do item ao passar o mouse */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, .3); /* Aumenta a sombra ao passar o mouse */
+    border: 2px solid black;
+
+}
+.list-item:hover .list-item__name {
+    opacity: 1; /* Torna o nome visível ao passar o mouse */
+}
+.list-item:hover .list-item__email{
+    opacity: 1; /* Torna o nome visível ao passar o mouse */
+}
+.list-item:hover .list-item__action {
+    display: flex; /* Exibe as ações ao passar o mouse */
+}

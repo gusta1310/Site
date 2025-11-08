@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/button_bmi_calculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BMI Calculator" />
+
+    <Button
+        android:id="@+id/button_grade_calculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Grade Calculator" />
+
+    <Button
+        android:id="@+id/button_about_developer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Developer" />
+
+</LinearLayout>

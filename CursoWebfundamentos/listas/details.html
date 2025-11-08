@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        details{
+            color: red;
+        }
+        details summary {
+            font-weight: bold; /* texto em negrito */
+            cursor: pointer; /* cursor de ponteiro */
+        }
+        details summary:hover {
+            color: blue; /* muda a cor do texto ao passar o mouse */
+        }
+        details[open]{
+            background-color: rgb(110, 110, 108); /* muda a cor de fundo quando aberto */
+        }
+    </style>
+</head>
+<body>
+    <h1>details</h1>
+    <details open> <!---details open: deixa o conteudo visivel--> <!-- escopo pra usar o summary -->
+        <summary>Pré-requisitos</summary> <!-- serve pra "esconder" o conteudo dentro do Summary, que no caso abaixo é minha Ul -->
+        <ul style="list-style: none;">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li> 
+        
+       
+    </details>
+</body>
+</html>

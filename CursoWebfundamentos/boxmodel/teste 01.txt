@@ -1,0 +1,107 @@
+REGRAS
+
+A PRIMEIRA TAG Q ABRE É A PRIMEIRA TAG QUE FECHA, A SEGUNDA TAG QUE ABRE É A SEGUNDA TAG QUE FECHA 
+
+-------------------------------------------------------------------------------------------------------------------------
+
+URL: LOCALIZADOR DE RECURSOS
+HTTP: PROTOCOLO DE TRANSFERENCIA DE HIPERTEXTO
+HTML: LINGUAGEM DE MARCAÇÃO DE HIPERTEXTO
+
+-------------------------------------------------------------------------------------------------------------------------
+<hr>: quebra de linha na horizontal com linha
+<br>: quebra de linha
+<p>: paragrafo
+<h1>: Titulo
+<h2>: subtitulo
+<h3>: sub subtitulo
+<h4>: subtitulo do h3
+<h5>: subtitulo do h4
+<h6>: subtitulo do h5
+<i> italico
+<b> negrito
+<em> italico semantico
+<strong> negrito semantico (importancia a mais)
+<mark> destaque especial
+<ul> lista nao ordenada
+<ol> lista ordenada 
+<a> link ancora
+
+-----------------------------------------------------------------------------------------------------------
+
+ATRIBUTOS
+
+<target> abra o link num novo url (aba)
+<href> mostra o link q deseja abrir ao clicar:
+
+    http: ir para outra pagina web
+    .html: vai para uma pagina que voce criou
+    #: ele vai navegar dentro da mesma pagina
+
+----------------------------------------------------------------------------------------------------------------
+
+CSS:
+
+ID = identificação de uma tag unica
+class = pode se usar varias vezes pra identificar uma tag
+
+CSS Fonts:
+
+Font-fammily: formata a familia da fonte
+font-size: muda o tamanho da fonte
+font-style: muda o estilo da fonte (italico ou normal)
+font-weight: muda o peso da fonte (vai ser negrito ou normal)
+
+CSS text:
+
+Text-align: alinhamento de texto
+Texte-decoration: decoração de texto ( _ ou riscos de sublinhamento)
+Text-indent: definir uma identação no inicio de cada paragrafo
+Text-transform: permite colocar um texto em maiusculo ou minusculo
+--------------------------------------------------------------------------------------------------------
+
+CSS modelagem:
+
+border: 10px solid #0000ff;
+Define uma borda geral de 10 pixels de largura, com estilo sólido e cor azul (#0000ff).
+Essa propriedade é sobrescrita pelas bordas específicas definidas abaixo (border-top, border-bottom, border-left).
+
+border-top: 43px groove #0b0b0e;
+Define a borda superior com:
+Largura de 43 pixels.
+Estilo groove (um efeito de sulco em 3D).
+Cor #0b0b0e (um tom escuro de cinza).
+
+border-bottom: 34px dotted #4c4c68;
+Define a borda inferior com:
+Largura de 34 pixels.
+Estilo dotted (pontilhado).
+Cor #4c4c68 (um tom de azul acinzentado).
+
+border-left: 20px double #ff00ff;
+Define a borda esquerda com:
+Largura de 20 pixels.
+Estilo double (duas linhas paralelas).
+Cor #ff00ff (magenta).
+
+padding: 20px;
+Adiciona um espaçamento interno de 20 pixels entre o conteúdo do elemento e suas bordas.
+
+O que o código faz:
+Este código estiliza elementos aplicando bordas de diferentes larguras, estilos e cores em cada lado do elemento.
+O padding garante que o conteúdo do elemento não fique colado às bordas, criando um espaço interno uniforme de 20 pixels.
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+Conteudo CSS:
+
+fit-content: O valor fit-content ajusta o tamanho de um elemento ao conteúdo interno, respeitando os limites mínimos e máximos definidos.
+ Ele permite que o elemento se expanda ou contraia para caber exatamente no conteúdo, sem ultrapassar os limites especificados.
+
+min-content: O valor min-content define o menor tamanho que o elemento pode ter sem que o conteúdo interno seja cortado ou transborde. 
+Ele considera o menor espaço necessário para exibir o conteúdo em uma única linha ou no menor formato possível.
+
+max-content: O valor max-content define o maior tamanho que o elemento pode ter para acomodar todo o conteúdo interno sem quebras de linha. 
+Ele expande o elemento até o tamanho máximo necessário para exibir o conteúdo completo.
+
+Overflow: o conteudo que excede a margem fica escondido 
+

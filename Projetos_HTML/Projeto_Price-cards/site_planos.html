@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Cards</title>
+
+    <style>
+        body{
+            background-color: rgb(22, 21, 21);
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+        }
+        .tips__plan {
+            color: white;
+            text-align: left;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, 
+            Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-top: 0;
+            text-transform: uppercase;
+            font-size: 20px;
+            margin-bottom: 0;
+            padding: 0;
+            
+        }
+        .tips__plan::after{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: rgb(65, 236, 65);
+            margin-top: 5px;
+        }
+        .title {
+            text-align: center;
+            color: white;
+            font-size: 50px;
+            font-weight: 600;
+            height: 70px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+            Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-top: 40px;
+            text-transform: uppercase;
+        }
+        .header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            height: 40px;
+            padding: 10px;
+            text-align: center;
+            
+        }
+        .header__nav::after{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: rgb(65, 236, 65);
+            margin-top: 5px;
+            margin-left: 30px;
+        }
+        .header__nav ul{
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            text-align: center;
+        }
+        .header__nav li, a {
+            text-decoration: none;
+            color: white;
+            border-radius: 10px black;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+            Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 100;
+            
+        }
+        .header__nav a:hover {
+            transition: color 0.3s ease;
+            border-radius: 10px;
+            padding: 10px;
+            color: rgb(91, 226, 91);
+            text-decoration: underline;
+        }
+        a.header__nav:active {
+            pointer-events: none;
+            color: aquamarine;
+            background-color: yellow;
+        }
+        .header__logo {
+            font-size: 24px;
+            color: white;
+            text-transform: uppercase;
+            margin-right: 900px;
+            font-weight: 300;
+            text-align: left;
+        }
+        .pricing__card {
+            background-color: rgb(43, 43, 43);
+            padding: 25px;
+            min-height: 320px;
+            flex-direction: column;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0;
+            margin-top: 0;
+            border-radius: 10px;
+            box-shadow: 0 5px 12px 3px rgb(87, 252, 87);
+            height: 100%;
+        }
+        .pricing__plan {
+            font-size: 34px;
+            color: white;
+            margin-bottom: 0;
+            text-align: center;
+            
+            
+        }
+        .pricing__list {
+            flex-grow: 1; /* Permite que a lista ocupe o espaço restante */
+            padding-left: 20px; /* para o recuo da bolinha */
+            font-size: 16px;
+            color: rgb(136, 136, 136);
+            text-align: left;
+            align-self: flex-start;
+            width: 100%;
+           
+        }
+        .pricing__list li::marker{
+            color: rgb(65, 236, 65);
+            font-size: 10px; 
+        }
+        .section__pricing{
+            display: flex;
+            justify-content: center;
+            align-items: stretch; /* Garante altura igual */
+            gap: 30px;
+            margin-top: 10px;
+        }
+        .botão{
+            background-color: rgb(65, 236, 65);
+            border-radius: 5px; 
+            border-color: black 10px solid;
+            padding: 10px;
+            text-align: center;
+            color: black;
+            font-weight: 900;
+            margin-left: 0;
+            margin-right: 0;
+            
+        }
+        .botão:hover{
+            background-color: rgb(22, 21, 21);
+            cursor: pointer;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+         
+
+    </style>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header__logo">MyServer</div>
+        <nav class="header__nav">
+            <ul >
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Planos</a></li>
+                <li><a href="#">Contatos</a></li>
+                <li><a href="#">Suporte</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1 class="title">Escolha seu Plano</h1>
+    <section class="section__pricing">
+        <div class="pricing__card">
+            <h2 class="tips__plan">Basic</h2>
+        <p><span class="pricing__plan">3.95</span>/mês</p>
+        <ul class="pricing__list">
+            <li>1 website</li>
+            <li>1GB de Armazenamento</li>
+            <li>10 GB de transferência</li>
+        </ul>
+        <div class="botão">Assine Já</div>
+        </div>
+        
+        <div class="pricing__card">
+            <h2 class="tips__plan">Premium</h2>
+        <p><span class="pricing__plan">7.95</span>/mês</p>
+        <ul class="pricing__list">
+            <li>3 website</li>
+            <li>3GB de Armazenamento</li>
+            <li>10 horas de suporte mensais</li>
+        </ul>
+        <div class="botão">Assine Já</div>
+        </div>
+        
+
+        <div class="pricing__card">
+            <h2 class="tips__plan">Gold</h2>
+        <p><span class="pricing__plan">13.95</span>/mês</p>
+        <ul class="pricing__list">
+            <li>10 websites</li>
+            <li>30GB de Armazenamento</li>
+            <li>transferência ilimitada</li>
+            <li>30 horas de suporte mensais</li>
+            <li>Email personalizado</li>
+        </ul>
+        <div class="botão">Assine Já</div>
+        </div>
+         
+    </section>
+</body>
+</html>

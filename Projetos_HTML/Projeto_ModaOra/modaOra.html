@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ModaOra: roupas modernas, elegantes e sofisticadas para todos os estilos. Descubra nossas coleções exclusivas">
+    <title>ModaOra - Moda e Estilo</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:ital,wght@0,100..900;1,100..900&family=Viaoda+Libre&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Federo&family=Italiana&family=Roboto:ital,wght@0,100..900;1,100..900&family=Viaoda+Libre&display=swap');
+    html{
+      
+        font-family: 'Roboto', sans-serif;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    :root{
+        --fonte: 'Roboto', sans-serif;
+        --fonte1: 'viaoda libre', sans-serif;
+        --fonte2: 'Federo', sans-serif;
+    }
+   .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #162028;
+    margin-bottom: 0;
+    padding: 0 60px;
+   }
+    .header-logo{
+        font-family: var(--fonte1);
+        font-size: 3rem;
+        color: #333;
+        color: aliceblue;
+        
+    }
+    .menu ul{
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+        font-family: var(--fonte);
+        
+    }
+    .menu li a{
+        color: #757575;
+        margin: 0 0px;
+        text-decoration: transparent;
+        text-transform: uppercase;
+        padding: 15px 20px;
+    }
+    .menu li a:hover{
+        color: #fff;
+        text-decoration: none;
+    }
+    .menu li a:active{
+        background-color: rgb(24, 24, 70);
+        text-decoration: none;
+    }
+    .content{
+        padding: 20px;
+        font-size: 1.2rem;
+        color: #333;
+        line-height: 1.6;
+        font-family: var(--fonte);
+        margin-top: 20px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .imagem{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .imagem img{
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        display: block;
+        line-height: 50px;
+        
+    }
+    .content p{
+        margin: 0;
+        padding: 0;
+        font-size: 1.2rem;
+        color: #333;
+        line-height: 1.6em;
+        font-family: var(--fonte);
+        text-align: center;
+
+    }
+    .subtitle{
+        text-align: center;
+        font-size: 3rem;
+        color: #0a0a0a;
+        margin-top: 20px;
+        font-family: var(--fonte1);
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 60px;
+        transition-duration: 1s;
+        transition-property: all;
+        transition-timing-function: ease-in-out;
+    }
+    .imagem1, .imagem2, .imagem3{
+        width: 30%;
+        text-align: center;
+    }
+    .imagem1 img, .imagem2 img, .imagem3 img{
+        width: 80%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 20px 10px 0px rgba(0, 0, 0, 0.3);
+    }
+    .imagem1 p, .imagem2 p, .imagem3 p{
+        font-size: 1.2rem;
+        color: #ffffff;
+        text-align: center;
+        font-family: var(--fonte);
+        background-color: #686767;
+        display: inline-block;
+        border-radius: 5px;
+        padding: 10px;
+        
+    }
+    .imagem1 h4, .imagem2 h4, .imagem3 h4{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #686767;
+        text-transform: uppercase;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .outro{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+        background-image: url(imagens/bg_detalhe.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0px 20px 120px 20px;
+        min-height: 90vh;
+        margin: 50px 70px 0 70px;
+        
+    }
+    .outro img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    .container img:hover{
+        transform: scale(1.05);
+        transition: all 0.5s ease-in-out;
+
+    }
+    .outro h1{
+        font-size: 3em;
+        color: #fff;
+        text-align: left;
+        font-family: var(--fonte2);
+        margin-top: 0px;
+        padding: 50px;
+        text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+        margin: 0 0 30px 0;
+
+       
+    }
+    .outro p{
+        font-size: 1.2rem;
+        color: #fff;
+        text-align: left;
+        font-family: var(--fonte);
+        margin-top: 5px;
+        padding: 20px;
+        line-height: 1.6;
+        margin-left: 20px;
+        
+    }
+    main, .content, .container, .outro, .imagem{
+        flex-shrink: 0; /* Impede que os elementos encolham */
+    }
+    
+    .footer{
+        background-color: #162028;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        font-family: var(--fonte);
+        margin-top: auto;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+</style>
+<body>
+   
+    <header class="header">
+        
+        <div class="header-logo">ModaOra</div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">portifolio</a></li>
+                <li><a href="transition.html">sobre Nós</a></li>
+                <li><a href="animation.html">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+       <div class="imagem">
+        <img src="imagens/topo.jpg" alt="sg">
+       
+       </div>
+    <main class="content"> 
+       <h2 class="subtitle">A escolha certa para momentos especiais</h2>
+
+<p>Com uma equipe de designers talentosos e experientes, criamos roupas que combinam qualidade, estilo e conforto. Utilizamos materiais de alta qualidade e técnicas de fabricação de ponta para garantir que cada peça seja durável e bonita. Desde vestidos até blusas, calças e saias, nossas coleções são criadas para pessoas modernas que desejam se sentir confiantes e sofisticadas. Nós nos esforçamos para oferecer a melhor experiência de compra possível, 
+garantindo a satisfação dos nossos clientes em cada etapa do processo.</p>
+    </main>
+    <div class="container">
+        <div class="imagem1">
+            <img src="imagens/modelo5.jpg" alt="sg">
+            <h4>vest romasa</h4>
+            <p>Forte & carismático</p>
+        </div>
+        <div class="imagem2">
+            <img src="imagens/modelo2.jpg" alt="sg">
+            <h4>jacket fima</h4>
+            <p>Elegante sofisticado</p>
+        </div>
+        <div class="imagem3">
+            <img src="imagens/modelo4.jpg" alt="sg">
+            <h4>jacket black kira</h4>
+            <p>Empoderamento atraente</p>
+
+        </div>
+    </div> 
+    
+    <div class="outro">
+       <h1>QUANDO OS DETALHES IMPORTAM SIMPLESMENTE MODA</h1>
+       <p>
+        Sabemos que, para muitas pessoas, a moda é mais do que simplesmente vestir roupas. <br>É uma forma de expressão e uma maneira de mostrar ao mundo quem você é. 
+        <br>É por isso que nos esforçamos para oferecer peças que atendam aos mais altos padrões de qualidade e estilo. 
+        <br>Desde a escolha dos materiais até a criação de cada detalhe, <br>nossa equipe se dedica a produzir roupas que se destacam pela sua elegância e sofisticação. 
+        <br>Aqui, você encontrará peças que unem o melhor da moda com a atenção aos detalhes que faz toda a diferença.
+        <br>Descubra uma nova forma de se expressar através da moda conosco.
+        </p>
+       
+
+    </div>
+    <footer class="footer">
+        © 2025 ModaOra. Todos os direitos reservados.
+    </footer>
+
+
+
+
+
+
+    </main>
+   
+</body>
+</html>

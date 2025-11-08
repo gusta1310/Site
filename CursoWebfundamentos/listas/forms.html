@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>introdução</legend>
+            Email
+            <input type="email" name="email" >
+             <br>
+
+            <br>
+            <label for="number">quantidade de filho</label>
+            <input type="number" id="number" min="0" max="">
+             <br>
+           
+
+            <br>
+
+            <label for="data">data</label>
+            <input type="date" id="ata"  min="2020-02-10"> <!---min: numero minimo q pode colocar, max: numero maximo q pode colocar-->
+             <br>
+            <br>
+             <label for="atv">Possui atividade extra? <!--pra selecionar um de cada vez o "name" tem que ser igual para os dois-->
+            <input type="radio" name="atv" id="atv" value="s"> Sim <!---sempre colocar "name" e "value" referentes as alternativas-->
+            </label>
+            <label for="atv-não">
+            <input type="radio" name="atv" id="atv-não" value="n"> Não <br>
+            </label> 
+            
+            <br>
+            
+        </fieldset>
+
+        <hr>
+
+        <fieldset>
+            <legend>Aréa de interesse</legend>
+
+            <label for="HTML">Qual vc prefere
+            <input type="checkbox" name="check" id="HTML" value="html">HTML
+            </label>
+            <label for="CSS">
+            <input type="checkbox" name="check" id="CSS" value="css">CSS
+            </label>
+            <label for="JavaScript">
+            <input type="checkbox" name="check" id="JavaScript" value="JavaScript">JavaScript
+            </label>
+            <br>
+            <br>
+            <select name="linguagem" required >
+                <label>Escolha uma opção</label>
+                <br>
+                <option value="">Selecione uma</option> <!--para obrigar o usuario a escolher uma-->
+                <optgroup label="frontend">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JAVASCRIPT</option>
+                    
+                </optgroup>
+                <optgroup label="backend">
+                    <option value="java">JAVA</option>
+                    <option value="PYTHON">PYTHON</option>
+                </optgroup>
+                </label>
+            </select>
+            <input type="text" list="linguagemList">
+            <datalist id="linguagemList"> 
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JavaScript">
+                <option value="PYTHON">
+            </datalist>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensagem</legend>
+            <input type="datetime-local" name="datahora">
+            <br>
+           
+            <textarea name="" id=""></textarea> <br> <br>
+            <input type="file" name="arquivo" accept=".pdf, .docx, .png"> <!---accept: aceita apenas esses tipos de arquivo-->
+        </fieldset>
+        <input type="submit">
+        <br>
+        <input type="reset" value="apagar"> <br>
+        <input type="search" name="buscar" placeholder="buscar"> <!---placeholder: texto dentro do campo--> <br>
+        <input type="range"> <br>
+    </form>
+</body>
+</html>

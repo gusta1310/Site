@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="gugas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-07 06:50:00 "/>
+        <attribute name="created" value="Z3VnYXM7REVTS1RPUC1QUTA2Mzg4OzIwMjMtMDUtMDc7IjAzOjA0OjUzICI7MjczMw=="/>
+        <attribute name="edited" value="Z3VnYXM7REVTS1RPUC1QUTA2Mzg4OzIwMjMtMDUtMDc7IjA2OjUwOjAwICI7NDsyODQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="inteiro, lado, base, altura, baseMaior, baseMenor, apotema, area, tipo" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Escolha o tipo de c&#225;lculo de &#225;rea que deseja: 1,2,3,4,5,6&quot;" newline="True"/>
+            <assign variable="tipo" expression="&quot;escolha o tipo&quot;"/>
+            <input variable="tipo"/>
+            <if expression="&quot;se o usuario digitar a op&#231;&#227;o 1 reproduza o codigo, sen&#227;o valor incorreto&quot;">
+                <then>
+                    <output expression="&quot;op&#231;ao = 1: digite o valor do lado do quadrado&quot;" newline="True"/>
+                    <input variable="lado"/>
+                    <assign variable="area" expression="lado*lado"/>
+                    <output expression="&quot;a area do quadrado &#233;:  &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;outros= valor incorreto&quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="&quot;se o usuario digitar a op&#231;&#227;o 2 reproduza o codigo, sen&#227;o valor incorreto&quot;">
+                <then>
+                    <output expression="&quot;op&#231;ao = 2: digite o valor da base do triangulo&quot;" newline="True"/>
+                    <input variable="base"/>
+                    <output expression="&quot;digite o valor da altura do triangulo&quot;" newline="True"/>
+                    <input variable="altura"/>
+                    <assign variable="area" expression="base*altura"/>
+                    <output expression="&quot;a area do triangulo &#233;:&quot;" newline="True"/>
+                    <breakpoint expression="" always="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;outros: valor incorreto&quot;" newline="True"/>
+                    <breakpoint expression="" always="True"/>
+                </else>
+            </if>
+            <if expression="&quot;se o usuario digitar a op&#231;&#227;o 3 reproduza o codigo, sen&#227;o valor incorreto&quot;">
+                <then>
+                    <output expression="&quot;op&#231;ao = 3: digite o valor da base do retangulo&quot;" newline="True"/>
+                    <input variable="base"/>
+                    <output expression="&quot;digite o valor da altura do retangulo:&quot;" newline="True"/>
+                    <input variable="altura"/>
+                    <assign variable="area" expression="base*altura"/>
+                    <output expression="&quot;a area do retangulo &#233;:&quot;" newline="True"/>
+                    <breakpoint expression="" always="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;outros= valor incorreto&quot;" newline="True"/>
+                    <breakpoint expression="" always="True"/>
+                </else>
+            </if>
+            <if expression="&quot;se o usuario digitar a op&#231;&#227;o 4 reproduza o codigo, sen&#227;o valor incorreto&quot;">
+                <then>
+                    <output expression="&quot;op&#231;ao = 4: digite o valor da base maior do trapezio&quot;" newline="True"/>
+                    <input variable="baseMaior"/>
+                    <output expression="&quot;digite o valor da base menor do trapezio&quot;" newline="True"/>
+                    <input variable="baseMenor"/>
+                    <output expression="&quot;digite o valor da altura do trapezio&quot;" newline="True"/>
+                    <input variable="altura"/>
+                    <assign variable="area" expression="((baseMaior + baseMenor) * altura) / 2"/>
+                    <output expression="&quot;a area do trapezio &#233;:  &quot;" newline="True"/>
+                    <breakpoint expression="" always="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;outros= valor incorreto&quot;" newline="True"/>
+                    <breakpoint expression="" always="True"/>
+                    <breakpoint expression="" always="True"/>
+                </else>
+            </if>
+            <if expression="&quot;se o usuario digitar a op&#231;&#227;o 5 reproduza o codigo, sen&#227;o valor incorreto&quot;">
+                <then>
+                    <output expression="&quot;op&#231;ao = 5: digite o valor da ap&#243;tema do pentagono&quot;" newline="True"/>
+                    <input variable="apotema"/>
+                    <output expression="&quot;digite o valor do lado do pentagono&quot;" newline="True"/>
+                    <input variable="lado"/>
+                    <assign variable="area" expression="(5*lado*apotema) / 2"/>
+                    <output expression="&quot;a area do pentagono &#233;:  &quot;" newline="True"/>
+                    <breakpoint expression="" always="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;outros = valor incorreto&quot;" newline="True"/>
+                    <breakpoint expression="" always="True"/>
+                </else>
+            </if>
+            <if expression="&quot;se o usuario digitar a op&#231;&#227;o 6 reproduza o codigo, sen&#227;o valor incorreto&quot;">
+                <then>
+                    <output expression="&quot;op&#231;ao = 6: digite o valor da ap&#243;tema do hexagono&quot;" newline="True"/>
+                    <input variable="lado"/>
+                    <assign variable="area" expression="(6*lado*apotema) / 2"/>
+                    <output expression="&quot;a area do hexagono &#233;:  &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;outros= valor incorreto&quot;" newline="True"/>
+                    <breakpoint expression="" always="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
